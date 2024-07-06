@@ -1,0 +1,97 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="index.css">
+        <title>Basketball Game</title>
+        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+
+    </head>
+    <body>
+        <!-- <div id="popup" class="popup">
+            <div class="popup-content">
+                <h4>Game Setup</h4>
+                <form id="gameForm">
+                    <label for="homeTeam">Home Team: </label>
+                    <input type="text" id="homeTeam" name="homeTeam" required>
+
+                    <label for="guestTeam">Guest Team: </label>
+                    <input type="text" id="guestTeam" name="guestTeam" required>
+
+
+                    <label for="gameTime">Game Time:(minutes): </label>
+                    <input type="number" id="gameTime" name="gameTime" required>
+
+                    <button type="submit">Start Game</button>
+
+                </form>
+
+
+            </div>
+
+        </div> -->
+
+
+
+
+
+        
+        <div class="container">
+            
+            <div class="home-Score">
+                <h3>HOME</h3>
+                <div class="homeScore">
+                    <h2 id="homeScoreboard">0</h2>
+                </div>
+                <div class="h-Scoreadd">
+                <button class="hscore1" onclick="add1()">+1</button>
+                <button class="hscore2" onclick="add2()">+2</button>
+                <button class="hscore3" onclick="add3()">+3</button>
+                </div>
+                <div>
+                    <button class="Foul" onclick="foulh()">Foul</button>
+                </div>
+            </div>
+            <div class="foulScoreBoard">
+                <p id="foulText">Fouls</p>
+                <h2 id="foulScoreH">0</h2>
+                
+            </div>
+            
+            <div id="timer">
+                <h3 id="timerDisplay">00:00</h3>
+            </div>
+            <div id="text-container" class="hidden">
+                <p id="text">Foul</p>
+            </div>
+            <div class="foulScoreBoard">
+                <p id="foulText">Fouls</p>
+                <h2 id="foulScoreG">0</h2>
+                
+            </div>
+            
+            <div>
+                <h3>GUEST</h3>
+                <div class="guestScore">
+                    <h2 id="guestScoreboard">0</h2>
+                    
+                </div>
+
+                   
+                <div class="g-Scoreadd">
+                <button class="gscore1" onclick="gadd1()">+1</button>
+                <button class="gscore2" onclick="gadd2()">+2</button>
+                <button class="gscore3" onclick="gadd3()">+3</button>
+                </div>
+
+                <div id="foulg">
+                    <button class="Foulbtng" onclick="foulg()">Foul</button>
+                </div>
+                
+            </div>
+            
+        </div>
+        <button class="restartButton" onclick="resetScore()">⟳</button>
+        
+        <script src="index.js"></script>
+    </body>
+</html>

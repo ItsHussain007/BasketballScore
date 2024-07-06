@@ -1,0 +1,359 @@
+*{
+    user-select: none;
+}
+
+body {
+    margin: 0;
+    background-color: #0369A1;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    
+
+    
+    
+}
+button {
+    
+    transition-duration: 0.4s;
+    border-radius: 15px;
+  }
+
+  button:hover
+  {
+    background-color: green;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+  }
+
+  button:active {
+
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+
+h3{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 20px;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+.homeScore{
+    margin-top: 0%;
+    display: flex;
+    justify-content: center; /* Aligns horizontally */
+    align-items: center;    /* Aligns vertically */
+    height: 60vh;          /* Full height of the viewport */
+    width: 70vh;
+    background-color: black;
+    color: white;
+    
+
+
+
+
+    
+}
+
+
+.guestScore{
+    margin-top: 0%;
+    display: flex;
+    justify-content: center; /* Aligns horizontally */
+    align-items: center;    /* Aligns vertically */
+    height: 60vh;          /* Full height of the viewport */
+    width: 70vh;
+    background-color: black;
+    color: white;
+
+    
+
+
+
+    
+}
+
+h2{
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    color:#F94F6D;
+    font-size: 150px;
+}
+
+.hscore1{
+    color: #9AABD8;
+    border: #9AABD8, solid,;
+    width: 120px;
+    background-color: #0369A1;
+    cursor: pointer;
+    font-size: 30px;
+
+}
+
+/* .hscore1:hover{
+    background-color: green;
+} */
+
+.hscore2{
+    color: #9AABD8;
+    border: #9AABD8, solid,;
+    width: 120px;
+    background-color: #0369A1;
+    cursor: pointer;
+    font-size: 30px;
+
+
+}
+.hscore3{
+    color: #9AABD8;
+    border: #9AABD8, solid,;
+    width: 120px;
+    background-color: #0369A1;
+    cursor: pointer;
+    font-size: 30px;
+
+}
+.hscore1:focus {
+    outline: none; /* Ensure outline is removed on focus */
+}
+.hscore2:focus {
+    outline: none; /* Ensure outline is removed on focus */
+}
+.hscore3:focus {
+    outline: none; /* Ensure outline is removed on focus */
+}
+
+.h-Scoreadd{
+    padding-top: 3vw;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+
+
+
+
+.gscore1{
+    color: #9AABD8;
+    border: #9AABD8, solid,;
+    width: 120px;
+    background-color: #0369A1;
+    cursor: pointer;
+    font-size: 30px;
+
+}
+
+.gscore2{
+    color: #9AABD8;
+    border: #9AABD8, solid,;
+    width: 120px;
+    background-color: #0369A1;
+    cursor: pointer;
+    font-size: 30px;
+
+}
+.gscore3{
+    color: #9AABD8;
+    border: #9AABD8, solid,;
+    width: 120px;
+    background-color: #0369A1;
+    cursor: pointer;
+    font-size: 30px;
+}
+.gscore1:focus {
+    outline: none; /* Ensure outline is removed on focus */
+}
+.gscore2:focus {
+    outline: none; /* Ensure outline is removed on focus */
+}
+.gscore3:focus {
+    outline: none; /* Ensure outline is removed on focus */
+}
+
+.g-Scoreadd{
+    padding-top: 3vw;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+
+.restartButton
+{
+    margin: auto;
+    background-color: #0369A1;
+    border: #0369A1;
+    color: white;
+    border-radius: 2px;
+    font-size: 70px;
+    width: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+
+
+}
+.restartButton:focus {
+    outline: none; /* Ensure outline is removed on focus */
+}
+
+
+.restartButton:hover
+{
+    color: red;
+    box-shadow: none !important;
+    background-color: #0369A1 !important;
+
+}
+
+
+.Foul{
+    margin-top: 10px;
+    color: #9AABD8;
+    border: #9AABD8, solid,;
+    width: 95%;
+    margin-left: 5px;
+    background-color: #0369A1;
+    cursor: pointer;
+    font-size: 30px;
+
+}
+.Foulbtng{
+    margin-top: 10px;
+    color: #9AABD8;
+    border: #9AABD8, solid,;
+    width: 95%;
+    background-color: #0369A1;
+    cursor: pointer;
+    font-size: 30px;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+#text{
+    margin-top: 0%;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: none; /* Hidden by default */
+}
+
+.visible {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+#text-container {
+    position: absolute;
+    color: white;
+    font-size: 50px;
+
+}
+.foulScoreBoard
+{
+    margin-top: 428px;
+}
+
+#foulScoreG
+
+{
+    display: flex;
+    justify-content: center; /* Aligns horizontally */
+    align-items: center;    /* Aligns vertically */
+    height: 12vh;          /* Full height of the viewport */
+    width: 12vh;
+    background-color: black;
+    color: #F94F6D;
+    margin-top: 0%;
+    font-size: 80px;
+
+}
+#foulScoreH
+
+{
+    display: flex;
+    justify-content: center; /* Aligns horizontally */
+    align-items: center;    /* Aligns vertically */
+    height: 12vh;          /* Full height of the viewport */
+    width: 12vh;
+    background-color: black;
+    color: #F94F6D;
+    margin-top: 0%;
+    font-size: 80px;
+
+}
+
+#foulText{
+
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+
+    margin-bottom: 0%;
+}
+
+/* 
+.popup {
+    display: flex; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.popup-content h2 {
+    margin-bottom: 20px;
+}
+
+.popup-content label {
+    display: block;
+    margin-top: 10px;
+}
+
+.popup-content input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.popup-content button {
+    padding: 10px 20px;
+    background-color: #0369A1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-content button:hover {
+    background-color: green;
+}
+ */
